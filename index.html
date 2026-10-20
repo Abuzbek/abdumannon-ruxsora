@@ -74,7 +74,7 @@ body {
 
 /* ---------- Page ---------- */
 main { max-width: 560px; margin: 0 auto; overflow: hidden; }
-.pad { padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.pad { padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
 .suzani { display: block; width: 100%; height: 46px; }
 section { padding-block: 40px; text-align: center; }
 
@@ -104,10 +104,10 @@ html.opened .rosette .core { animation: bloom .8s ease-out 2.9s both; }
 html.opened .spin { animation: spin 18s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-.letter { background: var(--anor); color: #fff4dc; border-radius: 4px; padding: 34px 26px; margin-inline: 4px; position: relative; box-shadow: 0 14px 40px -18px rgba(94,15,28,.6); }
+.letter { background: var(--anor); color: #fff4dc; border-radius: 4px; padding: 34px 24px; position: relative; box-shadow: 0 14px 40px -18px rgba(94,15,28,.6); }
 .letter::before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(236,213,154,.55); border-radius: 2px; pointer-events: none; }
 .letter h2 { font-family: var(--f-script); font-weight: 400; font-size: 40px; color: var(--oltin-light); margin: 0 0 12px; line-height: 1.2; }
-.letter p { margin: 0 auto 12px; max-width: 34ch; text-wrap: pretty; }
+.letter p { margin: 0 0 12px; text-wrap: pretty; }
 
 .letter .type.typing::after { content: "|"; margin-left: 1px; color: var(--oltin-light); animation: blink .8s steps(1) infinite; }
 .ask { margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(236,213,154,.4); }
@@ -119,9 +119,9 @@ html.opened .spin { animation: spin 18s linear infinite; }
 .no { background: transparent; color: #fff4dc; border: 1px solid rgba(236,213,154,.6); }
 .no.run { position: absolute; }
 .answer { font-family: var(--f-script); font-size: 30px; line-height: 1.3; color: var(--oltin-light); margin: 0; animation: rise .8s both; }
-.ayah { max-width: 30rem; margin: 0 auto; }
+
 .ayah .ar { font-family: "Amiri", "Traditional Arabic", serif; font-size: 28px; line-height: 2; color: var(--anor); margin: 14px 0 12px; text-wrap: balance; }
-.ayah .uz { font-style: italic; margin: 0 auto 10px; max-width: 34ch; text-wrap: pretty; }
+.ayah .uz { font-style: italic; margin: 0 0 10px; text-wrap: pretty; }
 .ayah cite { font-family: var(--f-caps); font-style: normal; font-size: 13px; letter-spacing: .2em; color: var(--oltin); text-transform: uppercase; }
 .date-big { font-family: var(--f-caps); color: var(--anor); display: flex; justify-content: center; align-items: center; gap: 18px; margin: 16px 0 6px; }
 .date-big .d { font-size: 72px; line-height: 1; }
